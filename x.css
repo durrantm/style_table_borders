@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App {
+  text-align: center;
+}
+body {
+  background-color: #110;
+}
+h1 {
+  font-size: 5vw;
+  color: #0a0;
+  margin-bottom: 1vw;
+  text-shadow: 3px 1px 2px #444;
+}
+h2 {
+  font-size: 3vw;
+  color: #dff;
+  margin-bottom: 10px;
+}
+h2#markets {
+  text-align: center;
+}
+div#navigation {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.nav-link {
+  font-size: 2.5vw;
+  color: #aa8b97;
+  padding-left: 15px;
+}
+.nav-link.active {
+  color: white;
+}
+section#currency-data {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: goldenrod;
+}
+section#currency-data .price {
+  text-align: right;
+}
+section#currency-data td {
+  padding: 1.6vw;
+}
+table#trades,
+table#orders {
+  font-size: 20px;
+  min-width: 600px;
+}
+table#trades td,
+table#orders td {
+  height: 30px;
+  font-size: 16px;
+  padding: 1vw;
+  white-space: nowrap;
+}
+table#trades th,
+table#orders th {
+  color: #fff;
+  position: sticky;
+  top: 0;
+  background: black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.root_executionsTable h1,
+.root_orders h1 {
+  font-size: 2rem;
+}
+.body_executionsTable,
+.body_ordersTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 16px 32px;
+}
+.row_executionsTable,
+.row_ordersTable {
+  color: gold;
+}
+.row_executionsTable,
+.row_ordersTable:nth-child(odd) {
+  background: #333;
+}
+.row_executionsTable.striped,
+.row_ordersTable:nth-child(even) {
+  background: #111;
+}
+.row_ordersTable.batch-mode:hover {
+  background: #a94825;
+  cursor: pointer;
+}
+table#trades thead,
+table#orders thead,
+tfoot {
+  background: #111119;
+}
+.txt_loading {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  color: #eee;
+}
+.chkbox_label {
+  color: #fff;
+  padding: 0 1rem;
+  font-size: 22px;
+}
+input.show-currency {
+  margin-right: 10px;
+}
+input[type="checkbox"] {
+  transform: scale(1.8);
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+.order-delete-me {
+  color: goldenrod;
+  text-decoration: none;
+  min-width: 20px;
+}
+.order-delete-me span {
+  cursor: pointer;
+}
+.order-delete-me span:hover {
+  color: gold;
+}
+.order-btn-group {
+  margin: 16px auto -16px;
+  text-align: center;
+}
+button {
+  margin: 5px;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #93f9f9;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+button.bulk-select-btn {
+  min-width: 7.5vw;
+  background-color: goldenrod;
+}
+button.bulk-select-btn:hover {
+  background-color: gold;
+}
+button.batch-delete-btn {
+  background-color: #f40;
+}
+button.batch-delete-btn:disabled {
+  background-color: #c0aba4;
+  cursor: not-allowed;
+  color: #343434;
+}
+button.batch-delete-btn:hover:enabled {
+  background-color: #ea7171;
+}
+section#currency-data td.asset_dollars,
+section#currency-data td.asset_amount {
+  text-align: right;
+}
+section#currency-data td.asset_amount {
+  font-size: 2.5vw;
+  text-align: center;
+  padding-top: 18px;
+}
+section#total-balance table tr td {
+  font-size: 10px;
+  color: green;
+  padding-top: 10px;
+}
+section.errors-main {
+  color: #f40;
+  min-height: 23px;
+}
+section.errors-main button {
+  cursor: pointer;
+  background: none;
+  border: 1px solid #f40;
+  color: #f40;
+  border-radius: 50%;
+  padding: 3px 6px;
+}
+button:hover:enabled {
+  background-color: #dff;
+}
+section.errors-main button:focus {
+  outline: none;
+}
+section.errors-main button:hover {
+  background-color: #ea7171;
+}
+.USD {
+  color: #8d7520;
+}
+.XSD {
+  color: goldenrod;
+}
+.ETH {
+  color: #da7520;
+}
+.LTC {
+  color: #ca7560;
+}
+.BUY {
+  color: #6f6;
+}
+.SELL {
+  color: #f40;
+}
+div#call-counter {
+  padding-top: 20px;
+  font-size: 2.2vw;
+  color: #dff;
+}
+.column-heading {
+  color: white;
+  font-size: 2vw;
+}
+.align-left {
+  text-align: left;
+}
+.time-now {
+  color: #888;
+}
+.righty {
+  text-align: right;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 10vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  .nav-link {
+    font-size: 4vw;
+  }
+  section#currency-data {
+    font-size: 6vw;
+    font-weight: bold;
+  }
+  div#call-counter {
+    font-size: 3vw;
+  }
+  section#currency-data div#call-counter {
+    font-size: 4vw;
+  }
+  span.total-balance {
+    font-size: 8vw;
+  }
+  .column-heading {
+    font-size: 3.5vw;
+  }
+  table#trades td,
+  table#orders td {
+    font-size: 14px;
+  }
+  table#trades th,
+  table#orders th {
+    font-size: 16px;
+  }
+  table#trades,
+  table#orders {
+    min-width: 400px;
+  }
+  td.asset_amount {
+    font-size: 3.5vw;
+  }
+  section#currency-data td.asset_amount {
+    font-size: 18px;
+    padding-top: 14px;
+  }
+  section#trades label.chkbox_label,
+  section#orders label.chkbox_label {
+    font-size: 18px;
+  }
+  section#trades label input.show-currency,
+  section#orders label input.show-currency {
+    width: 10px;
+    height: 10px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 601px) {
+  section#currency-data {
+    font-size: 4vw;
+  }
+  section#currency-data .total-balance {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  section#currency-data .total-balance {
+    font-size: 37px;
+  }
+  section#currency-data {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  section#currency-data div#call-counter {
+    font-size: 20px;
+  }
+  section#currency-data .column-heading {
+    font-size: 16px;
+  }
+  section#currency-data td.asset_amount {
+    font-size: 22px;
+  }
+  section#currency-data td {
+    padding: 12px;
+  }
+  table#trades,
+  table#orders {
+    min-width: 800px;
+  }
+  table#trades td,
+  table#orders td {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 940px) {
+  h2#markets {
+    text-align: left;
+  }
+  section#currency-data {
+    display: flex;
+    justify-content: center;
+  }
+  section#markets {
+    padding-top: 176px;
+  }
+  section#total-balance {
+    padding-right: 320px;
+  }
+  div#call-counter {
+    padding-right: 320px;
+  }
+  .time-now {
+    font-size: 22px;
+  }
+}
