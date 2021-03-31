@@ -1,0 +1,261 @@
+<head>
+  <link rel="stylesheet" href="x.css" />
+</head>
+<body>
+<div id="root">
+  <div class="App">
+    <h1>PAXOS ATS</h1>
+    <div id="navigation">
+      <span><a class="nav-link" href="/">Home</a></span
+      ><span style="margin-left: 10px"
+        ><a class="nav-link" href="/executions">Executions</a></span
+      ><span style="margin-left: 10px"
+        ><a class="nav-link" href="/orders" aria-current="page">Orders</a></span
+      ><span style="margin-left: 10px"
+        ><a class="nav-link active" href="/multi-order" aria-current="page"
+          >Trading</a
+        ></span
+      >
+    </div>
+    <section class="errors-main"></section>
+    <div data-testid="orders" class="root_ordersTable">
+      <section id="orders">
+        <div class="body_ordersTable">
+          <table id="orders">
+            <thead>
+              <tr class="row_ordersTable righty" style="background: #111">
+                <td colspan="5" style="font-size: 2vw; text-align: center">
+                  &lt;Select Currency - BTC&gt;
+                </td>
+              </tr>
+              <tr class="row_ordersTable righty" style="background: #111">
+                <td colspan="5" style="font-size: 2vw; text-align: center">
+                  [Market Price - 23,372]
+                </td>
+              </tr>
+              <tr class="row_ordersTable righty" style="background: #111">
+                <td colspan="6" style="text-align: center">Buys</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="righty">
+                <th>&nbsp;</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Diff</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td>&nbsp;</td>
+                <td style="">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td data-testid="order-price">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  -84.00
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  $2,907.39
+                </td>
+                <td class="order-delete-me">X</td>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td>&nbsp;</td>
+                <td style="">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td data-testid="order-price">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  -104.00
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  $2,905.01
+                </td>
+                <td class="order-delete-me">X</td>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td>&nbsp;</td>
+                <td style="">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td data-testid="order-price">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  -124.00
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  $2,902.51
+                </td>
+                <td class="order-delete-me">X</td>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td>&nbsp;</td>
+                <td style="">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td data-testid="order-price">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  -144.00
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  $2,900.01
+                </td>
+                <td class="order-delete-me">X</td>
+              </tr>
+              <tr class="righty">
+                <td>Total:&nbsp;&nbsp;</td>
+                <td data-testid="total-quantity" style="">0.49938</td>
+                <td colspan="2"></td>
+                <td data-testid="total-price">28,400.00</td>
+              </tr>
+              <tr class="row_ordersTable righty" style="background: #111">
+                <td></td>
+                <td colspan="4"></td>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td colspan="5" style="text-align: center">Sells</td>
+              </tr>
+              <tr class="righty">
+                <th>&nbsp;</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Diff</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td>&nbsp;</td>
+                <td style="">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td data-testid="order-price">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  +84.00
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  $2,928.36
+                </td>
+                <td class="order-delete-me">X</td>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td>&nbsp;</td>
+                <td style="">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td data-testid="order-price">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  +104.00
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  $3,055.71
+                </td>
+                <td class="order-delete-me">X</td>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td>&nbsp;</td>
+                <td style="">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td data-testid="order-price">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  +304.00
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  $3,080.68
+                </td>
+                <td class="order-delete-me">X</td>
+              </tr>
+              <tr class="row_ordersTable righty">
+                <td>&nbsp;</td>
+                <td style="">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td data-testid="order-price">
+                  <input type="text" style="width: 7vw; font-size: 1.6vw" />
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  +504.00
+                </td>
+                <td
+                  data-testid="order-total"
+                  style="font-size: 1.8vw; font-weight: bold"
+                >
+                  $3,105.64
+                </td>
+                <td class="order-delete-me">X</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="righty">
+                <td>Total:&nbsp;&nbsp;</td>
+                <td data-testid="total-quantity">0.124845</td>
+                <td colspan="2"></td>
+                <td data-testid="total-price">28,400.00</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
